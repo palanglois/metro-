@@ -1,7 +1,8 @@
 ### Splitted metro distance ###
 
 Samples n points on mesh_1 and mesh_2. Computes the nearest neighbour distance between each point of 
-mesh_1 to all_points of mesh_2 and the other way around.
+mesh_1 to all_points of mesh_2 and the other way around. Then, for both sets of distance, returns 
+the 95% percentile highest distance.
 
 If mesh_1 is a ground truth and mesh_2 is an experiment, the first given value is the precision ; the 
 second value is the completeness
