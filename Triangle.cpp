@@ -123,7 +123,6 @@ multiset<double> findPcDistance(const PointCloud& refPointCloud, const PointClou
     const int dim = 3;
     const int maxLeaf = 10;
     EigenKdTree refTree(dim, cref(refPointCloud), maxLeaf);
-    refTree.index->buildIndex();
 
     // do a knn search
     const size_t num_results = 1;
